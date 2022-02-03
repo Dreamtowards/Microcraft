@@ -10,15 +10,13 @@ theme: mkdocs
 
 pages:
   - Home: index.md
-  - Catalog:
-      - Index: index.md
-      - Series I:
-        - E1: index.md
-        - E2: index.md
+  - Epsoids:
+      - Microcraft E1: microcraft-e1.md
+      - Microcraft E2: microcraft-e2.md
 
 markdown_extensions:
   - admonition
 
 docs_dir: 'docs'
 
-#copyright: Copyright &copy; 2017 Someone
+copyright: Copyright &copy; 2021 Someone

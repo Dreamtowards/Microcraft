@@ -1,11 +1,48 @@
-The Test Doc 1.
+
+## Microcraft™ Development Series *INDX
+
+Microcraft™ is 
 
 
-# Title 1
+### *epsoids
+
+- **Microcraft dE.1** [[[*]]]()  
+  Window Init, OpenGL Setup. 
 
 
-abc 
+- **Microcraft E2**  
+  First Triangle, Plain Shader.
 
-## Title2
+---
 
-123
+- **Microcraft E3**  
+  Quad, Texture, View & Projection, Camera Control.
+
+
+- **Microcraft E4**  
+  Batch Cube, Sections & Chunks.
+
+
+- **Microcraft E5**  
+  Viewport Picking.
+
+
+- **Microcraft E6**  
+  Phong Lighting.
+
+
+- **Microcraft E7**  
+  Basic Terrain, Little Mountain, Tree.
+
+
+- **Microcraft E6**  
+  Essential Collision.
+
+
+- **Microcraft E8**  
+  Entity, 
+
+
+
+
+
