@@ -14,9 +14,6 @@ pages:
       - Microcraft E1: microcraft-e1.md
       - Microcraft E2: microcraft-e2.md
 
-extra_css:
-  - _ext_style.css
-
 
 markdown_extensions:
   - admonition
