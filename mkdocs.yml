@@ -11,8 +11,9 @@ theme: mkdocs
 pages:
   - Home: index.md
   - Epsoids:
-      - Microcraft E1: microcraft-e1.md
-      - Microcraft E2: microcraft-e2.md
+      - "Microcraft E1, Window Init.": microcraft-e1.md
+      - Microcraft E2, The Triangle.: microcraft-e2.md
+      - Microcraft E3, Quad, Texture, View, Camera.: microcraft-e3.md
 
 
 markdown_extensions:
