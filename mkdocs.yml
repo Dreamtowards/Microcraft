@@ -6,7 +6,7 @@ site_author: Dreamtowards
 repo_url: https://github.com/Dreamtowards/Microcraft
 edit_uri: ""
 
-theme: mkdirs
+theme: mkdocs
 
 pages:
   - Home: index.md
