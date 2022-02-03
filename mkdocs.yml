@@ -16,9 +16,6 @@ pages:
         - E1: docs/index.md
         - E2: docs/index.md
 
-
-extra_css:
-
 markdown_extensions:
   - admonition
 
