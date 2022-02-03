@@ -10,10 +10,19 @@ theme: mkdocs
 
 pages:
   - Home: index.md
-  - Epsoids:
-      - "Microcraft E1, Window Init.": microcraft-e1.md
-      - Microcraft E2, The Triangle.: microcraft-e2.md
-      - Microcraft E3, Quad, Texture, View, Camera.: microcraft-e3.md
+  - Series I - Fundamential:
+      - Microcraft E1. Window Init.: microcraft-e1.md
+      - Microcraft E2. The Triangle.: microcraft-e2.md
+      - Microcraft E3. Quad, Texture, View, Camera.: microcraft-e3.md
+  - Series II - Advanced:
+      - Microcraft S2E1. SSAO Ambient Occlusion.
+      - Microcraft S2E2. Normal Mapping.
+      - Microcraft S2E3. Environment Reflection.
+      - Microcraft S2E4. Shadow Mapping.
+      - Microcraft S2E5. Paradox Mapping.
+  - Series III - Refundamention:
+      - Microcraft S3E1. Marching Cube MC1998 ISO Surface.
+      - Microcraft S3E2. Triplanar Mapping.
 
 
 markdown_extensions:
