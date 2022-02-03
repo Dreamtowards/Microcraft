@@ -1,10 +1,13 @@
 
-## Microcraft™ Development Series *INDX
+# Microcraft™ Development Series *INDX
 
-Microcraft™ is 
+Microcraft™ is a Realtime Graphics Project funded by Simplex Studios, 
+intended to pay a respect & tribute in aspect of technology to the realmasterpiece _Classic Minecraft_ which is funded by Mojang.
+
+This project will involved Professional Developer & Technology, engaged by Several Master. please feel free to enjoy.
 
 
-### *epsoids
+### Epsoids
 
 - **Microcraft dE.1** [[[*]]]()  
   Window Init, OpenGL Setup. 
