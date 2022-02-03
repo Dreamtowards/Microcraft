@@ -6,13 +6,17 @@ site_author: Dreamtowards
 repo_url: https://github.com/Dreamtowards/Microcraft
 edit_uri: ""
 
-theme: cinder
+theme: mkdirs
 
 pages:
   - Home: index.md
   - Epsoids:
       - Microcraft E1: microcraft-e1.md
       - Microcraft E2: microcraft-e2.md
+
+extra_css:
+  - _ext_style.css
+
 
 markdown_extensions:
   - admonition
