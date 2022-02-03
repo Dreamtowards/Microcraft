@@ -9,12 +9,12 @@ edit_uri: ""
 theme: mkdocs
 
 pages:
-  - Home: docs/index.md
+  - Home: index.md
   - Catalog:
-      - Index: docs/index.md
+      - Index: index.md
       - Series I:
-        - E1: docs/index.md
-        - E2: docs/index.md
+        - E1: index.md
+        - E2: index.md
 
 markdown_extensions:
   - admonition
