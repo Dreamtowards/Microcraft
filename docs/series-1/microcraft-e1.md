@@ -1,5 +1,5 @@
 
-# Microcraft E1. <small>_Window Init. OpenGL Setup._</small>
+# Microcraft E1. <small>_Init Window. OpenGL Setup._</small>
 
 Hello everyone. I am so glad can have the qualification can engage to the 
 Microcraft Development Series.
@@ -131,6 +131,10 @@ now we can see GL functions working properly.
 
 ---
 
-Fullcode: https://github.com/Dreamtowards/Microcraft/blob/main/archives/Microcraft-E1-220111.zip
-Video: https://www.youtube.com/watch?v=7sF6YGN4PTM (Detailed)  
-Post: https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/
+Video: [VID](https://www.youtube.com/watch?v=7sF6YGN4PTM)  
+Post: [https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/](https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/)  
+Fullcode: [Microcraft-E1-220111.zip](https://github.com/Dreamtowards/Microcraft/blob/main/archives/Microcraft-E1-220111.zip)  
+
+<style>
+h1,h2,h3,h4 { font-weight: bold; }
+</style>
