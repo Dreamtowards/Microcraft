@@ -24,6 +24,8 @@ pages:
       - Microcraft S3E1. Marching Cube MC1998 ISO Surface.: a.md
       - Microcraft S3E2. Triplanar Mapping.: a.md
 
+extra_css:
+  - "_ext_style.css"
 
 markdown_extensions:
   - admonition
