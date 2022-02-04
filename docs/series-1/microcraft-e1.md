@@ -39,6 +39,9 @@ int main() {
     return 0;
 }
 ```
+```shell
+$ g++ main.cpp -o test && ./test
+```
 
 ## GLFW Library Initialization.
 
@@ -86,7 +89,10 @@ int main() {
     return 0;
 }
 ```
-
+```shell
+$ gcc src/main.cpp lib/libglfw3.a lib/glad.c -o test -Iinclude   # OSX required also: -framework Cocoa -framework OpenGL -framework IOKit
+$ ./test
+```
 > Note: In OSX platform, building dependencies "-framework Cocoa -framework OpenGL -framework IOKit" are required. [[see]](https://www.glfw.org/docs/latest/build.html#build_link_osx)
 
 
@@ -117,12 +123,14 @@ while (..) {  // the mainloop.
 ...
 ```
 
-see. now we can use GL functions properly.
+now we can see GL functions working properly.
 
 
 
-Props | Vals
----   | ---
-Video | https://www.youtube.com/watch?v=7sF6YGN4PTM
-Post  | https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/
-Hint  | the video contains literally all the details, include step by step <br>improvement modifications progressively. 
+
+
+---
+
+Fullcode: https://github.com/Dreamtowards/Microcraft/blob/main/archives/Microcraft-E1-220111.zip
+Video: https://www.youtube.com/watch?v=7sF6YGN4PTM (Detailed)  
+Post: https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/

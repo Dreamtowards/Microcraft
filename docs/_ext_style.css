@@ -11,6 +11,10 @@ h3, h4, h5, h6 {
 h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
     margin-top: 20px;
 }
+body {
+    font-size: 14.8px;
+    color: #444;
+}
 
 blockquote {
     border-left: 2px solid #eee;
@@ -29,9 +33,4 @@ pre code {
     padding: 12px!important;
     font-family: Consolas, Menlo, monospace;
     font-size: 13px;
-}
-
-body {
-    font-size: 14.8px;
-    color: #444;
 }
