@@ -6,6 +6,7 @@ intended to pay a respect & tribute in aspect of technology & vibe to the realma
 
 This project will involved Professional Developer & Technology, engaged by Several Master. please feel free to enjoy.
 
+> In Series I, we gonna mainly use Cplusplus & OpenGL CoreProfile. btw the IDE is CLion and OS is OSX-Catalina but no matter at 100% which to use.
 
 ### Epsoids.
 

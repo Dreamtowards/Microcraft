@@ -12,10 +12,10 @@ pages:
   - Home: index.md
   - Series I. Fundamential:
       - Microcraft E1. Window Init.: microcraft-e1.md
-      - Microcraft E2. The Triangle.: microcraft-e2.md
-      - Microcraft E3. Quad, Texture, View, Camera.: microcraft-e3.md
+      - Microcraft E2. The Triangle.: series-1/microcraft-e2.md
+      - Microcraft E3. Quad, Texture, View, Camera.: series-1/microcraft-e3.md
   - Series II. Advanced:
-      - Microcraft S2E1. SSAO Ambient Occlusion.: a.md
+      - Microcraft S2E1. SSAO Ambient Occlusion.: series-2/microcraft-s2e1.md
       - Microcraft S2E2. Normal Mapping.: a.md
       - Microcraft S2E3. Environment Reflection.: a.md
       - Microcraft S2E4. Shadow Mapping.: a.md
