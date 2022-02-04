@@ -14,7 +14,7 @@ but people knows it who really understand 1% of mc or little bit more.
 
 However, we're really gotta go, so lets begin.
 
-## 1. New Directory of the Projekt
+## <small>1.</small> New Directory of the Projket
 
 It's simple, but not trivial. I'd like to create the directory by my self 
 manually instead of create it by IDE.
@@ -28,7 +28,7 @@ $ mkdir ~/YouResponsitory/Microcraft    # or use Finder/Explorer..
 
 Then just used CLion, open the empty directory.
 
-### 1.1. Hello Word™
+#### 1.1. Hello Word™
 
 Check it out, whether it's really working.
 
@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-## 2. GLFW Init.
+## <small>2.</small> GLFW Library Initialization.
 
 It's time to setup the Window etc. 
 
@@ -92,9 +92,34 @@ int main() {
 > Note: In OSX platform, building dependencies "-framework Cocoa -framework OpenGL -framework IOKit" are required. [[see]](https://www.glfw.org/docs/latest/build.html#build_link_osx)
 
 
-## 3. GLAD Init.
+## <small>3.</small> GLAD Linker Initialization.
 
-GLAD is helping for us to use OpenGL properly.
+GLAD is helping for us to use OpenGL properly. it links OpenGL functions to real implementations. 
+_(GLAD site: https://glad.dav1d.de)_
+
+Get the site, generate/download for OpenGL CoreProfile 3.3 & language C/Cpp, setup the headers, sources.  
+after all, load it in initialize phase.
+
+```cpp
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
+...glfw init
+
+if (!gladLoadGlLoader((GLADloadproc)glfwGetProcAddress)) {
+    std::cout << "Failed to init GLAD." << std::endl;   
+}
+
+while (..) {  // the mainloop.
+
+    glClearColor(0, 1, 0, 1);
+    glClear(GL_COLOR_BUFFER_BIT);
+    ...
+}
+...
+```
+
+see. now we can use GL functions properly.
 
 
 
