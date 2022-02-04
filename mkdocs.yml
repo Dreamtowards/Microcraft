@@ -11,7 +11,7 @@ theme: mkdocs
 pages:
   - Home: index.md
   - Series I. Fundamential:
-      - Microcraft E1. Window Init.: microcraft-e1.md
+      - Microcraft E1. Window Init.: series-1/microcraft-e1.md
       - Microcraft E2. The Triangle.: series-1/microcraft-e2.md
       - Microcraft E3. Quad, Texture, View, Camera.: series-1/microcraft-e3.md
   - Series II. Advanced:
