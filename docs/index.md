@@ -7,7 +7,7 @@ intended to pay a respect & tribute in aspect of technology & vibe to the realma
 This project will involved Professional Developer & Technology, engaged by Several Master. please feel free to enjoy.
 
 
-### Epsoids
+### Epsoids.
 
 - **Microcraft dE.1** [[[*]]]()  
   Window Init, OpenGL Setup. 
