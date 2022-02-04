@@ -3,3 +3,20 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     font-weight: normal;
 }
+
+blockquote {
+    border-left: 2px solid #eee;
+    background: #d9d9d9;
+}
+blockquote p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+pre {
+    padding: 0;
+}
+pre code {
+    padding: 12px!important;
+}
