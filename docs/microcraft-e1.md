@@ -14,21 +14,19 @@ but people knows it who really understand 1% of mc or little bit more.
 
 However, we're really gotta go, so lets begin.
 
-## <small>1.</small> New Directory of the Projket
+## Projec Initialization.
 
 It's simple, but not trivial. I'd like to create the directory by my self 
-manually instead of create it by IDE.
-
-I don't want overstated, but something, the project, needed to be tight,
-not pile of crap which loosen mess, but have a well control.
+manually instead of create it by IDE.  
+for something, needed to be tight, prevents lost control, jus keep it, as we can.
 
 ```shell
 $ mkdir ~/YouResponsitory/Microcraft    # or use Finder/Explorer..
 ```
 
-Then just used CLion, open the empty directory.
+then just used CLion, open the empty directory.
 
-#### 1.1. Hello Word™
+### Hello Word™
 
 Check it out, whether it's really working.
 
@@ -42,7 +40,7 @@ int main() {
 }
 ```
 
-## <small>2.</small> GLFW Library Initialization.
+## GLFW Library Initialization.
 
 It's time to setup the Window etc. 
 
@@ -92,7 +90,7 @@ int main() {
 > Note: In OSX platform, building dependencies "-framework Cocoa -framework OpenGL -framework IOKit" are required. [[see]](https://www.glfw.org/docs/latest/build.html#build_link_osx)
 
 
-## <small>3.</small> GLAD Linker Initialization.
+## GLAD Linker Initialization.
 
 GLAD is helping for us to use OpenGL properly. it links OpenGL functions to real implementations. 
 _(GLAD site: https://glad.dav1d.de)_
@@ -123,9 +121,8 @@ see. now we can use GL functions properly.
 
 
 
-
-
-> Post: https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/  
-> Video: https://www.youtube.com/watch?v=7sF6YGN4PTM  
-> hint: the video contains literally all the details, include step by step
-> improvement modifications progressively. 
+Props | Vals
+---   | ---
+Video | https://www.youtube.com/watch?v=7sF6YGN4PTM
+Post  | https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/
+Hint  | the video contains literally all the details, include step by step <br>improvement modifications progressively. 
