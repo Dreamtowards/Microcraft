@@ -43,7 +43,7 @@ int main() {
 $ g++ main.cpp -o test && ./test
 ```
 
-## GLFW lib, window init.
+## GLFW, window init.
 
 It's time to setup the Window etc. 
 
@@ -96,7 +96,7 @@ $ ./test
 > Note: In OSX platform, building dependencies "-framework Cocoa -framework OpenGL -framework IOKit" are required. [[see]](https://www.glfw.org/docs/latest/build.html#build_link_osx)
 
 
-## GLAD lib, GL functions loadup.
+## GLAD, GL functions loadup.
 
 GLAD is helping for us to use OpenGL properly. it links OpenGL functions to real implementations. 
 _(GLAD site: https://glad.dav1d.de)_
