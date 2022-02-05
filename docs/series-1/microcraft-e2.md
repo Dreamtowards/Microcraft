@@ -10,6 +10,8 @@ and vertex data are required to be stored into video devices in batches.
 > In Immediate mode (legacy opengl), rendering pipeline always is fixed functionality, 
 > and vertex data always passing from RAM to GPU frame by frame. which might leaks of flexibility & efficiency.
 > [[1]](https://www.khronos.org/opengl/wiki/Legacy_OpenGL)
+> [[2]](https://www.khronos.org/opengl/wiki/Fixed_Function_Pipeline)
+> [[3]](https://www.khronos.org/opengl/wiki/Tessellation)
 
 ---
 
@@ -33,14 +35,14 @@ the vertices are NDC Coordinate.
 > OpenGL internal vertex coordinate system is NDC (the `gl_Position.xyz`), 
 > and it's actually left-hand coordinates. anything out of the [-1.0, 1.0] will be discarded/clipped. see _Clip Space_.
 > <small>(lot people using right-hand coords in practice (e.g. Minecraft), but always the projection matrix just transformed it into 
-> left-hand (negating the z).)</small>  
-> 
+> left-hand (negating the z).)</small>
 
 ### Vertex Buffer Object, VBO
 
 A Vertex Buffer Object (VBO) is an OpenGL feature that provides methods
 for uploading vertex data (e.g. positions, normals, texcoords) to the 
-video device for non-immediate-mode rendering. <cite>-- Wikipedia VBO.</cite> [[1]](https://en.wikipedia.org/wiki/Vertex_buffer_object)
+video device for non-immediate-mode rendering. 
+<cite>-- Wikipedia VBO.</cite> [[1]](https://en.wikipedia.org/wiki/Vertex_buffer_object)
 
 Let's just put our triangle vertices into a VBO
 ```cpp
@@ -159,8 +161,11 @@ glDrawArrays(GL_TRIANGLES, 0, 3);
 ```
 
 
+for detailed explanation, great article
+[LearnOpenGL - HelloTriangle](https://learnopengl.com/Getting-started/Hello-Triangle)
+by JoeyDeVriez is available.
 ----
 
 Video: [VID](https://www.youtube.com/watch?v=)  
 Post: [https://microcraft.edwardrolinsen.com/series-1/microcraft-e2/](https://microcraft.edwardrolinsen.com/series-1/microcraft-e2/)    
-Fullcode: [Microcraft-E2-.zip]()
+Fullcode: [Microcraft-E2-220205.zip](https://github.com/Dreamtowards/Microcraft/blob/main/archives/Microcraft-E2-220205.zip)

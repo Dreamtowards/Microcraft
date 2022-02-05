@@ -45,8 +45,6 @@ int main() {
     glEnableVertexAttribArray(0);
 
 
-    GLuint sprogram = glCreateProgram();
-
     const char* svsh =
             "#version 330 core\n"
             "layout (location = 0) in vec3 in_pos;"
@@ -82,14 +80,15 @@ int main() {
         std::cout << "Failed to compile shader. / FRAGMENT_SHADER:\n" << infolog << std::endl;
     }
 
-    glAttachShader(sprogram, vsh);
-    glAttachShader(sprogram, fsh);
-    glLinkProgram(sprogram);
+    GLuint program = glCreateProgram();
+    glAttachShader(program, vsh);
+    glAttachShader(program, fsh);
+    glLinkProgram(program);
 
-    glGetProgramiv(sprogram, GL_LINK_STATUS, &succ);
+    glGetProgramiv(program, GL_LINK_STATUS, &succ);
     if (!succ) {
         char infolog[512];
-        glGetProgramInfoLog(sprogram, 512, nullptr, infolog);
+        glGetProgramInfoLog(program, 512, nullptr, infolog);
         std::cout << "Failed to link shader program:\n" << infolog << std::endl;
     }
 
@@ -102,7 +101,7 @@ int main() {
         glClearColor(0, 1, 0, 1);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        glUseProgram(sprogram);
+        glUseProgram(program);
         glBindVertexArray(vao);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
