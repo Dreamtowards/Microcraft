@@ -14,7 +14,7 @@ but people knows it who really understand 1% of mc or little bit more.
 
 However, we're really gotta go, so lets begin.
 
-## Projec Initialization.
+## init Project.
 
 It's simple, but not trivial. I'd like to create the directory by my self 
 manually instead of create it by IDE.  
@@ -43,7 +43,7 @@ int main() {
 $ g++ main.cpp -o test && ./test
 ```
 
-## GLFW Library Initialization.
+## GLFW <small>library initialization. window init.</small>
 
 It's time to setup the Window etc. 
 
@@ -96,7 +96,7 @@ $ ./test
 > Note: In OSX platform, building dependencies "-framework Cocoa -framework OpenGL -framework IOKit" are required. [[see]](https://www.glfw.org/docs/latest/build.html#build_link_osx)
 
 
-## GLAD Linker Initialization.
+## GLAD <small>linker initialization. GL functions loadup.</small>
 
 GLAD is helping for us to use OpenGL properly. it links OpenGL functions to real implementations. 
 _(GLAD site: https://glad.dav1d.de)_
@@ -135,6 +135,8 @@ Video: [VID](https://www.youtube.com/watch?v=7sF6YGN4PTM)
 Post: [https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/](https://microcraft.edwardrolinsen.com/series-1/microcraft-e1/)  
 Fullcode: [Microcraft-E1-220111.zip](https://github.com/Dreamtowards/Microcraft/blob/main/archives/Microcraft-E1-220111.zip)  
 
+<!--
 <style>
 h1,h2,h3,h4 { font-weight: bold; }
-</style>
+</style> 
+-->
