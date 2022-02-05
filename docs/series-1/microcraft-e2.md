@@ -4,9 +4,12 @@
 Hello, welcome bake. today, we're gonna to Do, the Triangle.
 
 Since we are using OpenGL CoreProfile, Shaders & sth like Programmable Rendering Pipeline are required.
-and vertex data are required to be stored into video devices in batches instead of frame by frame passing.
+and vertex data are required to be stored into video devices in batches.
 
-> **Immediate Mode**, Legacy OpenGL (Fixed Function Pipeline)
+> **Immediate Mode**, Legacy OpenGL (Fixed Function Pipeline)  
+> In Immediate mode (legacy opengl), rendering pipeline always is fixed functionality, 
+> and vertex data always passing from RAM to GPU frame by frame. which might leaks of flexibility & efficiency.
+> [[1]](https://www.khronos.org/opengl/wiki/Legacy_OpenGL)
 
 ---
 
@@ -23,15 +26,14 @@ float vts[] = {
 // but since we are mainly for 3d, just keep it.
 ```
 
-the Coordinate we're written is NDC which the _Normalized Device Coordinate_.
+the vertices are NDC Coordinate.
 
 > **Normalized Device Coordinate, NDC**  
 > NDC, a coordinate system that value of x, y, z are between -1.0 and 1.0.  
-> OpenGL internal vertex coordinates is NDC (the `gl_Position.xyz`), 
+> OpenGL internal vertex coordinate system is NDC (the `gl_Position.xyz`), 
 > and it's actually left-hand coordinates. anything out of the [-1.0, 1.0] will be discarded/clipped. see _Clip Space_.
-> <small>(tho most people are using right-hand coords in practice
-> e.g. in Minecraft, and the projection matrix just transformed it into 
-> left-hand (negating the z) then pass to the gl_Position.)</small>  
+> <small>(lot people using right-hand coords in practice (e.g. Minecraft), but always the projection matrix just transformed it into 
+> left-hand (negating the z).)</small>  
 > 
 
 ### Vertex Buffer Object, VBO
@@ -73,8 +75,12 @@ glEnableVertexAttribArray(0);  // enable layout-0
 Now, our data are already set up, let's see how we do the Rendering.
 
 
-## Shader Program
+## Shaders
 
+Shaders (generally) are small programs that run on thousand of small processing cores of 
+GPU in parallel, for each step of Graphics Pipeline.
+
+There, shaders are written in GLSL (OpenGL Shading Language).
 
 ### Vertex Shader
 
@@ -88,7 +94,7 @@ void main() {
 }
 ```
 
-load it up. 
+shader is done, we have to load it up. 
 ```cpp
 const char* svsh = ..the shader source..;
 
@@ -120,7 +126,7 @@ void main() {
 load up is similar, just with `glCreateShader(GL_FRAGMENT_SHADER)` of creating.
 
 ### Link Program
-
+we have to link these shaders, to a whole program.
 ```cpp
 // Create Program, Attach Shaders, Link Program.
 GLuint program = glCreateProgram();
@@ -141,11 +147,15 @@ glDeleteShader(fsh);
 ```
 
 ## The Triangle
-
 ```cpp
+// in mainloop:
+// ..glClear()
+
 glUseProgram(program);
 glBindVertexArray(vao);
 glDrawArrays(GL_TRIANGLES, 0, 3);
+
+// ..swapBuffers();
 ```
 
 

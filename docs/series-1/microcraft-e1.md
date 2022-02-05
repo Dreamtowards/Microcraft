@@ -21,14 +21,10 @@ manually instead of create it by IDE.
 for something, needed to be tight, prevents lost control, jus keep it, as we can.
 
 ```shell
-$ mkdir ~/YouResponsitory/Microcraft    # or use Finder/Explorer..
+$ mkdir ~/YouRepository/Microcraft    # or use Finder/Explorer..
 ```
 
-then just used CLion, open the empty directory.
-
-### Hello Word™
-
-Check it out, whether it's really working.
+Hello Word™ routine. check it out, whether it's really working.
 
 ```cpp
 #include <iostream>
@@ -96,7 +92,7 @@ $ ./test
 > Note: In OSX platform, building dependencies "-framework Cocoa -framework OpenGL -framework IOKit" are required. [[see]](https://www.glfw.org/docs/latest/build.html#build_link_osx)
 
 
-## GLAD, GL functions loadup.
+## GLAD, gl funcs loadup.
 
 GLAD is helping for us to use OpenGL properly. it links OpenGL functions to real implementations. 
 _(GLAD site: https://glad.dav1d.de)_
