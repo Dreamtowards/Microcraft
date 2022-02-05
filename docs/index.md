@@ -10,7 +10,7 @@ This project will involved Professional Developer & Technology, engaged by Sever
 
 <br>
 
-### Series I. Fundamental.
+### <span style="font-weight: 300;">Series I. Fundamental.</span>
 
 - **Microcraft dE.1** [[[*]]]()  
   Window Init, OpenGL Setup. 
